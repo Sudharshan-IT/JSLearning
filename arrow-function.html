@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>****Arrow Function****</h1>
+        <script>
+            //Normal Fuciton Defination
+            function welcomeMessage(user){
+                console.log("Normal Function Has Started")
+                welMes="Welcome To Mr."+user;
+                return welMes;
+            }
+            //Function Call
+            console.log(welcomeMessage('Nandyala Sudharshan'));
+            //Aarrow Function Defination
+            let welcomeMes=(user)=>{
+                console.log("Arrow Function Method Has Executed")
+                return "Weclome To Java Script Learning Mr."+user;
+            }
+            //Arrow Function Calling
+            console.log(welcomeMes("Sudharshan"));
+            let squire=(num)=>{
+                return num*num;
+            }
+            console.log(" Squire Of Given Number:"+squire(9));
+        </script>
+    </body>
+</html>
