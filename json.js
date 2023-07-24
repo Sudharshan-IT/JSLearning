@@ -39,3 +39,31 @@ console.log(emp.Emp1(),
     //Destructuring
     const{studentNumber,studentName,locaiton,group}=student;
     console.log(studentName,locaiton,studentNumber,group);
+    let subList={
+        "oracle":Oracle,
+        "mysql":MySQL,
+        "mongodb":MongoDB,
+        "cassandradb":Cassandradb(),
+    }
+    function Oracle(){
+        return 'Oracle Connection Soon ....!';
+    }
+    function MySQL(){
+        return 'My Sql Connection Soon ....!';
+    }
+    function MongoDB(){
+        return "Mongo DB Connection Soon ...!";
+    }
+    function Cassandradb(){
+        return 'CassandraDB Connectin Soon ..!'
+    }
+    console.log(subList.oracle);
+
+    let emp1={
+      "empId":606316,
+      "empName":"Sudharshan",
+      "empLocation":"Hyderbad"
+    }
+    for(let key in emp1){
+        console.log(emp1.empId);
+    }
