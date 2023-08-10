@@ -70,4 +70,36 @@ function myFunction(item, index, arr) {
   newNumbers[index] = item * 10;
 }
 console.log(newNumbers);
+const nums=[300,340,360,400];
+const numsRes=nums.map(
+    (ele,index,original)=>{
+    console.log(ele,index,original);
+    return ele+100;
+    },0
+);
+console.log(numsRes);
+
+const users=[
+    {
+        "FirstName":"Nandyala",
+        "LastName":"Sudharshan",
+        "Age":28
+    },
+    {
+        "FirstName":"Adimulam",
+        "LastName":"Pavani",
+        "Age":24
+    },
+    {
+        "FirstName":"Mamilla",
+        "LastName":"Narendra",
+        "Age":28
+    }
+]
+const fullName=users.map(
+    (user)=>{
+        return user.FirstName+" "+user.LastName+" "+user.Age;
+    }
+);
+console.log("Full Name With Age :",fullName);
 
