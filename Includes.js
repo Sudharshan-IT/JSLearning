@@ -26,4 +26,5 @@ let results=(Marks<40)?"UnSatisfied":
             return results;
 }
 console.log(findResult(50));
+
     
